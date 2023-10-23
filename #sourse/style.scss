@@ -99,15 +99,15 @@ a {
     .info-block__item:last-child {
         padding: 30px 30px;
         width: 300px;
-        background: url(/img/main/icons/outline.png) 100%/90% no-repeat;
+        background: url(../img/main/icons/outline.png) 100%/90% no-repeat;
         overflow: visible;
     }
 }
 
 .footer {
     &__top {
-        background: url(/img/main/get_started/leafs1.png) left bottom no-repeat,
-            url(/img/main/get_started/leafs2.png) right bottom no-repeat;
+        background: url(../img/main/get_started/leafs1.png) left bottom no-repeat,
+            url(../img/main/get_started/leafs2.png) right bottom no-repeat;
         background-color: #163A24;
         padding: 120px 0;
     }
