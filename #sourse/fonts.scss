@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('../fonts/Recoleta-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+.text {
+    &_title {
+        font-family: "Recoleta";
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 65.25px;
+
+        &-medium {
+            font-size: 28px;
+            line-height: 31.5px;
+        }
+
+        &-small {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+
+    &_green {
+        color: #163A24;
+    }
+
+    &_light-green {
+        color: #198C36;
+    }
+
+    &_white {
+        color: #FBFAF7;
+    }
+
+    &_small {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &_medium {
+        font-size: 16px;
+        line-height: 21.79px;
+    }
+}

@@ -1,0 +1,144 @@
+@import 'null.scss';
+@import 'fonts.scss';
+@import 'templates.scss';
+
+body {
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+a {
+    color: #FBFAF7;
+    font-size: 16px;
+    border-radius: 160px;
+    height: 52px;
+
+    &:hover {
+        border: 1px solid transparent;
+    }
+}
+
+.header {
+    background-color: #163A24;
+
+    .info-block__column {
+        width: 470px;
+
+        img {
+            margin-right: -40px;
+        }
+    }
+}
+
+.main__info {
+    padding: 130px 98px;
+
+    .partners {
+        padding-top: 113px;
+
+
+        .info-block__row {
+            gap: 40px;
+            width: 983px;
+        }
+    }
+}
+
+.hr-production {
+    background-color: #163A24;
+    padding: 66px 0 120px;
+}
+
+.employes {
+    padding: 120px 0;
+    background-color: #E5E5E5;
+
+    .info-block__column {
+        width: 786px;
+    }
+}
+
+.interests {
+    padding: 120px 0;
+    gap: 20px;
+
+    .info-block__row {
+        gap: 40px;
+        align-items: start;
+    }
+
+    .info-block__item {
+        padding: 50px 35px 66px;
+        background-color: #FBFAF7;
+        width: 356px;
+        box-shadow: 5px 5px 20px #E9E4D5;
+        border-radius: 15px;
+        gap: 20px;
+        align-items: flex-start;
+        text-align: left;
+
+        ul {
+            li {
+                list-style: disc;
+                margin: 0 0 20px 15px
+            }
+        }
+    }
+}
+
+.booking {
+    background-color: #F2EFE6;
+    padding: 120px 0;
+
+    .info-block__item:last-child {
+        padding: 30px 30px;
+        width: 300px;
+        background: url(/img/main/icons/outline.png) 100%/90% no-repeat;
+        overflow: visible;
+    }
+}
+
+.footer {
+    &__top {
+        background: url(/img/main/get_started/leafs1.png) left bottom no-repeat,
+            url(/img/main/get_started/leafs2.png) right bottom no-repeat;
+        background-color: #163A24;
+        padding: 120px 0;
+    }
+
+    &__form {
+        background-color: #F2EFE6;
+        padding: 60px 0;
+
+        .info-block__column {
+            width: 860px;
+            align-items: flex-start;
+        }
+
+        .form__input {
+            background-color: #fff;
+            height: 45px;
+            width: 590px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 160px;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    &__input {
+        font-family: Recoleta;
+        font-size: 24px;
+        border-radius: 160px;
+        padding-left: 10px;
+        width: 420px;
+    }
+
+}
