@@ -6,7 +6,7 @@
     .partners {
         padding-top: 113px;
 
-        .info-block__row a {
+        .info-block__row img {
             width: 12%;
         }
 
@@ -19,9 +19,9 @@
 
 @media (max-width: 768px) {
     .main__info .partners .info-block__row {
-        gap: 20px;
+        gap: 40px;
 
-        a {
+        img {
             width: 65px;
         }
     }

@@ -28,12 +28,6 @@
 
         .form__input {
             position: relative;
-            height: 54px;
-            display: flex;
-            justify-content: space-between;
-            border-radius: 160px;
-            margin-bottom: 20px;
-
             .btn {
                 position: absolute;
                 right: 0;
@@ -42,13 +36,6 @@
                 width: 100px;
             }
         }
-    }
-
-    &__input {
-        font-size: 16px;
-        border-radius: 160px;
-        padding-left: 10px;
-        width: 100%;
     }
 
     .navigation {
@@ -80,6 +67,7 @@
             width: 100%;
         }
     }
+
     .copyright {
         text-align: center;
     }
