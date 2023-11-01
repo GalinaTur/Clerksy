@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
     <title>Clerksy - HR Production</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
@@ -13,9 +13,9 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="navigation">
-                <a href="#">
-                    <img src="./img/header/header-logotype.svg" alt="Logotype">
+            <nav class="navigation">
+                <a href="index.html">
+                    <img src="./img/header/header-logotype.svg" alt="Clerksy logo">
                 </a>
 
                 <div class="navigation__row">
@@ -23,12 +23,12 @@
 
                     <a href="tel:8443326440">844-332-6440</a>
 
-                    <a class="btn btn_border-shadow" href="#">Get Started</a>
+                    <a class="btn" href="#">Get Started</a>
                 </div>
-            </div>
+            </nav>
 
-            <div class="info-block">
-                <div class="info-block__column">
+            <div class="info-block info-block__row">
+                <div class="info-block__column column__text">
                     <h2 class="text text_title text_white">
                         Running the show has never been so easy.
                     </h2>
@@ -39,17 +39,21 @@
                     </h3>
                 </div>
 
-                <div class="info-block__column">
-                    <img src="./img/header/header-img.png" alt="">
+                <div class="info-block__column column__img">
+                    <img src="./img/header/header-img.svg" alt="Clerksy Intro Image">
                 </div>
             </div>
         </div>
     </header>
 
     <main class="main">
-        <div class="container">
-            <section class="main__info">
-                <div class="info-block info-block_rev">
+        <section class="main__info">
+            <div class="container">
+                <div class="info-block info-block__row">
+                    <div class="info-block__column">
+                        <img src="./img/main/images/cast.svg" alt="Cast">
+                    </div>
+
                     <div class="info-block__column">
                         <h2 class="text text_title text_green">
                             Put the human back in HR.
@@ -59,13 +63,14 @@
                             Your employees are the real stars. Show the love and help them perform!
                         </p>
                     </div>
-
-                    <div class="info-block__column">
-                        <img src="./img/main/images/Img1.png" alt="Beautiful image">
-                    </div>
                 </div>
 
-                <div class="info-block">
+                <div class="info-block info-block_rev mobile_hide">
+
+                    <div class="info-block__column">
+                        <img src="./img/main/images/juggling.svg" alt="Juggling">
+                    </div>
+
                     <div class="info-block__column">
                         <h2 class="text text_title text_green">
                             You don’t have to play all the parts.
@@ -75,13 +80,9 @@
                             Sales, accounting, HR— Oh My! You can’t do it all - let Clerksy help.
                         </p>
                     </div>
-
-                    <div class="info-block__column">
-                        <img src="./img/main/images/Img2.png" alt="Beautiful image">
-                    </div>
                 </div>
 
-                <section class="partners">
+                <div class="partners">
                     <div class="info-block__column info-block__column_center">
                         <h2 class="text text_title text_green">We partner with the best</h2>
                         <div class="info-block__row">
@@ -92,9 +93,9 @@
                             <a href=""><img src="./img/main/partners/aircall.png" alt="partner - aircall"></a>
                         </div>
                     </div>
-                </section>
-            </section>
-        </div>
+                </div>
+            </div>
+        </section>
 
         <section class="hr-production info-block">
             <div class="container">
@@ -102,22 +103,22 @@
                     <h2 class="text text_title text_white">HR Production of the Highest Quality</h2>
                     <div class="info-block__row">
                         <div class="hr-production__item info-block__item">
-                            <img src="./img/main/goals/goal1.png" alt="Our goal">
+                            <img src="./img/main/goals/goal1.svg" alt="Our goal">
                             <p class="text text_white">Educates & Informs Employee Expectations</p>
                         </div>
 
                         <div class="info-block__item">
-                            <img src="./img/main/goals/goal2.png" alt="Our goal">
+                            <img src="./img/main/goals/goal2.svg" alt="Our goal">
                             <p class="text text_white">Protects Your Business Just in Case</p>
                         </div>
 
                         <div class="info-block__item">
-                            <img src="./img/main/goals/goal3.png" alt="Our goal">
+                            <img src="./img/main/goals/goal3.svg" alt="Our goal">
                             <p class="text text_white">Manages & Stores Important Documents</p>
                         </div>
 
                         <div class="info-block__item">
-                            <img src="./img/main/goals/goal4.png" alt="Our goal">
+                            <img src="./img/main/goals/goal4.svg" alt="Our goal">
                             <p class="text text_white">Create a Healthy Work Environment</p>
                         </div>
                     </div>
@@ -126,29 +127,25 @@
         </section>
 
         <section class="employes info-block">
-            <div class="container info-block__column info-block__column_center">
-                <h2 class="text text_title text_green">
-                    Employees come in all shapes and sizes. Find the right fit.
-                </h2>
+            <div class="container">
+                <div class="info-block__column info-block__column_center">
+                    <h2 class="text text_title text_green">
+                        Employees come in all shapes and sizes. Find the right fit.
+                    </h2>
 
-                <p class="text text_green">
-                    Focus on casting and screening. Let Clerksy handle contracts, resolve any on set-conflicts and
-                    make sure you are compliant with work and safety boards.
-                </p>
+                    <p class="text text_green">
+                        Focus on casting and screening. Let Clerksy handle contracts, resolve any on set-conflicts and
+                        make sure you are compliant with work and safety boards.
+                    </p>
 
-                <div class="info-block__row">
-                    <img class="employes__image" src="./img/main/employees/empl1.png" alt="Our employees">
-                    <img class="employes__image" src="./img/main/employees/empl2.png" alt="Our employees">
-                    <img class="employes__image" src="./img/main/employees/empl3.png" alt="Our employees">
-                    <img class="employes__image" src="./img/main/employees/empl4.png" alt="Our employees">
-                    <img class="employes__image" src="./img/main/employees/empl5.png" alt="Our employees">
+                    <img class="employes__image" src="./img/main/employees/costumes.svg" alt="Our employees">
                 </div>
             </div>
         </section>
 
-        <div class="container">
-            <section class="main__info ">
-                <div class="info-block">
+        <section class="main__info ">
+            <div class="container">
+                <div class="info-block info-block__row">
                     <div class="info-block__column">
                         <h2 class="text text_title text_green">
                             How the scenes fit together
@@ -160,56 +157,58 @@
                     </div>
 
                     <div class="info-block__column">
-                        <img src="./img/main/images/Img3.png" alt="Beautiful image">
+                        <img src="./img/main/images/scenes.svg" alt="Scenes">
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="interests">
-                    <div class="info-block__column info-block__column_center">
-                        <h2 class="text text_title text_green">Consider everyone's best interest</h2>
-                        <p class="text text_green">HR is for everyone. Clerksy can help you.</p>
-                        <div class="info-block__row">
-                            <div class="info-block__item">
-                                <img src="./img/main/icons/icon1.png" alt="Icon">
-                                <p class="text text_title text_title-medium text_green">Protect Your Company</p>
-                                <ul class="text text_medium text_green">
-                                    <li>Compliance Audits & Training</li>
-                                    <li>Employee Data Storage</li>
-                                    <li>Policy Drafting</li>
-                                </ul>
-                            </div>
+        <section class="interests">
+            <div class="container">
+                <div class="info-block__column info-block__column_center">
+                    <h2 class="text text_title text_green">Consider everyone's best interest</h2>
+                    <p class="text text_green">HR is for everyone. Clerksy can help you.</p>
+                    <div class="info-block__row">
+                        <div class="info-block__item">
+                            <img src="./img/main/icons/icon1.png" alt="Icon">
+                            <p class="text text_title text_title-medium text_green">Protect Your Company</p>
+                            <ul class="text text_medium text_green">
+                                <li>Compliance Audits & Training</li>
+                                <li>Employee Data Storage</li>
+                                <li>Policy Drafting</li>
+                            </ul>
+                        </div>
 
-                            <div class="info-block__item">
-                                <img src="./img/main/icons/icon2.png" alt="Icon">
-                                <p class="text text_title text_title-medium text_green">Set Your Employees Up For
-                                    Success
-                                </p>
-                                <ul class="text text_medium text_green">
-                                    <li>Learning & Development</li>
-                                    <li>Employee Relations</li>
-                                    <li>Benefit Management</li>
-                                    <li>Employee Performance</li>
-                                </ul>
-                            </div>
+                        <div class="info-block__item">
+                            <img src="./img/main/icons/icon2.png" alt="Icon">
+                            <p class="text text_title text_title-medium text_green">Set Your Employees Up For
+                                Success
+                            </p>
+                            <ul class="text text_medium text_green">
+                                <li>Learning & Development</li>
+                                <li>Employee Relations</li>
+                                <li>Benefit Management</li>
+                                <li>Employee Performance</li>
+                            </ul>
+                        </div>
 
-                            <div class="info-block__item">
-                                <img src="./img/main/icons/icon3.png" alt="Icon">
-                                <p class="text text_title text_title-medium text_green">Know Your Industry's Legal
-                                    Landscape
-                                </p>
-                                <ul class="text text_medium text_green">
-                                    <li>Work Place Investigations</li>
-                                    <li>Employee Mediations</li>
-                                    <li>Performance Tracking</li>
-                                </ul>
-                            </div>
+                        <div class="info-block__item">
+                            <img src="./img/main/icons/icon3.png" alt="Icon">
+                            <p class="text text_title text_title-medium text_green">Know Your Industry's Legal
+                                Landscape
+                            </p>
+                            <ul class="text text_medium text_green">
+                                <li>Work Place Investigations</li>
+                                <li>Employee Mediations</li>
+                                <li>Performance Tracking</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
-        <section class="booking info-block">
+        <section class="booking info-block info-block__row">
             <div class="container">
                 <div class="info-block__column info-block__column_center">
                     <h2 class="text text_title text_green">It's easy as 1, 2, 3</h2>
@@ -220,14 +219,14 @@
                             <p class="text text_title text_title-medium text_green">5 minutes</p>
                         </div>
 
-                        <img class="arrow" src="./img/main/icons/arrow1.png" alt="Arrow">
+                        <img class="arrow mobile_hide" src="./img/main/icons/arrow1.png" alt="Arrow">
 
                         <div class="info-block__item">
                             <p class="text text_green">Time it will take a Clerksy rep to follow up:</p>
                             <p class="text text_title text_title-medium text_green">24 hours</p>
                         </div>
 
-                        <img class="arrow" src="./img/main/icons/arrow2.png" alt="Arrow">
+                        <img class="arrow mobile_hide" src="./img/main/icons/arrow2.png" alt="Arrow">
 
                         <div class="info-block__item">
                             <p class="text text_green">Take advantafe of our monthly plans starting at:</p>
@@ -241,7 +240,7 @@
         </section>
 
         <section class="main__info container">
-            <div class="info-block">
+            <div class="info-block info-block__row">
                 <div class="info-block__column info-block__column_left">
                     <h2 class="text text_title text_green">
                         Not just another HR resource.
@@ -256,13 +255,13 @@
                 </div>
 
                 <div class="info-block__column">
-                    <img src="./img/main/images/Img4.png" alt="Our book">
+                    <img src="./img/main/images/ebook.svg" alt="Our book">
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class='footer'>
         <section class="footer__top info-block">
             <div class="container">
                 <div class="info-block__column info-block__column_center">
@@ -281,7 +280,7 @@
 
         <section class="footer__form">
             <div class="container">
-                <div class="info-block">
+                <div class="info-block info-block__row">
                     <div class="info-block__column">
                         <h2 class="text text_title text_green">
                             Stay up to date!
@@ -295,7 +294,7 @@
                     <div class="info-block__column">
                         <form action="#" method="get">
                             <div class="form__input">
-                                <input class="footer__input" type="email">
+                                <input class="footer__input" type="email" placeholder="Enter Your Email">
                                 <button class="btn" type="submit">Sign Up</button>
                             </div>
 
@@ -309,7 +308,7 @@
             </div>
         </section>
 
-        <section class="footer__bottom container">
+        <div class="footer__bottom container">
             <div class="navigation">
                 <a href="">
                     <img src="./img/footer/footer_logo.svg" alt="Logotype">
@@ -317,7 +316,7 @@
 
                 <p class="text text_title text_title-small text_green">A people company.</p>
 
-                <div class="navigation__row">
+                <nav class="navigation__row">
                     <a href="#">
                         <img src="./img/footer/icons/facebook.png" alt="">
                     </a>
@@ -333,22 +332,22 @@
                     <a href="#">
                         <img src="./img/footer/icons/insta.png" alt="">
                     </a>
-                </div>
+                </nav>
             </div>
 
             <div class="navigation">
                 <p class="copyright text_small text_green">© 2020 Clerksy, Inc. Clerksy is a registered trademark of
                     Clerksy, Inc.</p>
 
-                <div class="navigation__row">
+                <nav class="navigation__row">
                     <a class="text text_small text_light-green" href="">Privacy Policy</a>
                     <a class="text text_small text_light-green" href="">Terms of Service</a>
                     <a class="text text_small text_light-green" href="">GDPR</a>
                     <a class="text text_small text_light-green" href="">Careers</a>
                     <a class="text text_small text_light-green" href="">Press Kit</a>
-                </div>
+                </nav>
             </div>
-        </section>
+        </div>
     </footer>
 </body>
 

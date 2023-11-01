@@ -1,0 +1,36 @@
+.booking {
+    background-color: $light-gray;
+
+    .info-block__item:last-child {
+        padding: 30px;
+        width: 300px;
+        background: url(../img/main/icons/outline.png) 100%/90% no-repeat;
+        background-position: center;
+        overflow: visible;
+    }
+}
+
+@media (max-width: 1000px) {
+    .booking .container {
+            width: 80vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .booking {
+
+        .info-block__row {
+            gap: 50px;
+        }
+
+        .info-block__item {
+            padding: 20px;
+            width: 100%;
+        }
+
+        .info-block__item:last-child {
+            padding: 40px;
+            width: min(300px, 100%);
+        }
+    }
+}

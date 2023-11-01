@@ -1,0 +1,27 @@
+.hr-production {
+    background-color: $dark-green;
+
+    .container {
+        width: 78vw;
+    }
+
+    .info-block__column {
+        gap: 70px;
+    }
+
+    .info-block__item {
+        width: 200px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hr-production {
+        .info-block__row {
+            gap: 70px;
+        }
+
+        .info-block__item {
+            gap: 30px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    &__row {
+        display: flex;
+        gap: 24px;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navigation {
+        padding: 40px 20px;
+        flex-direction: column;
+        gap: 25px;
+
+        .btn {
+            background-color: transparent;
+            padding: 10px 0;
+            max-height: unset;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation__row {
+        width: 100%;
+        gap: unset;
+    }
+}

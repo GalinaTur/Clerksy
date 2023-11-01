@@ -1,0 +1,86 @@
+.footer {
+    .container {
+        width: 80vw;
+    }
+
+    .text_title {
+        padding: 0;
+    }
+
+    &__top {
+        background: url(../img/main/get_started/leafs1.svg) left bottom no-repeat,
+            url(../img/main/get_started/leafs2.svg) right bottom no-repeat;
+        background-color: $dark-green;
+        background-size: 20%;
+    }
+
+    &__form {
+        background-color: $light-gray;
+        padding: 60px 0;
+
+        .info-block {
+            gap: 0;
+
+            &__column {
+                align-items: flex-start;
+            }
+        }
+
+        .form__input {
+            position: relative;
+            height: 54px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 160px;
+            margin-bottom: 20px;
+
+            .btn {
+                position: absolute;
+                right: 0;
+                height: 100%;
+                padding: 0 5px;
+                width: 100px;
+            }
+        }
+    }
+
+    &__input {
+        font-size: 16px;
+        border-radius: 160px;
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    .navigation {
+        border-bottom: 1px solid $light-gray;
+        padding: 40px 0;
+
+        &:last-child {
+            border-bottom: 1px solid transparent;
+            padding: 15px 0;
+        }
+
+        &__row {
+            gap: 0;
+            column-gap: 10px;
+            align-items: flex-start;
+            white-space: nowrap;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__form .info-block {
+        gap: 20px;
+
+        &__column {
+            align-items: center;
+            width: 100%;
+        }
+    }
+    .copyright {
+        text-align: center;
+    }
+}

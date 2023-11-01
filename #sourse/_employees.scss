@@ -1,0 +1,13 @@
+.employes {
+    background-color: $light-gray;
+
+    .info-block__column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .employes .container {
+        width: 91vw;
+    }
+}

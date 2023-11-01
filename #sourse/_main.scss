@@ -1,0 +1,28 @@
+.main__info {
+    img {
+        width: 100%;
+    }
+
+    .partners {
+        padding-top: 113px;
+
+        .info-block__row a {
+            width: 12%;
+        }
+
+        .info-block__column {
+            width: 100%;
+            gap: 55px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main__info .partners .info-block__row {
+        gap: 20px;
+
+        a {
+            width: 65px;
+        }
+    }
+}

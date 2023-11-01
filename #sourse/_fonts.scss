@@ -21,41 +21,56 @@
 
 .text {
     &_title {
+        padding-right: 10%;
         font-family: "Recoleta";
         font-weight: 600;
         font-size: 48px;
-        line-height: 65.25px;
+        line-height: 1.2;
 
         &-medium {
             font-size: 28px;
-            line-height: 31.5px;
         }
 
         &-small {
             font-size: 24px;
-            line-height: 36px;
         }
     }
 
     &_green {
-        color: #163A24;
+        color: $dark-green;
     }
 
     &_light-green {
-        color: #198C36;
+        color: $light-green;
     }
 
     &_white {
-        color: #FBFAF7;
-    }
-
-    &_small {
-        font-size: 14px;
-        line-height: 21px;
+        color: $white;
     }
 
     &_medium {
         font-size: 16px;
-        line-height: 21.79px;
+    }
+
+    &_small {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 1000px) {
+    .text_title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text_title {
+        font-size: 26px;
+        padding: 0;
+
+        &-medium {
+            font-size: 20px;
+        }
     }
 }
