@@ -6,7 +6,17 @@
 @import 'navigation.scss';
 @import 'footer';
 
-.header {
+.main {
+    height: max(fit-content, 100vh);
+    background-color: $dark-green;
+    height: 100vh;
+    color: $white;
+    overflow-y: hidden;
+
+    .container {
+        width: 80vw;
+    }
+
     .text_title {
         padding: 0;
     }
@@ -20,13 +30,14 @@
     }
 
     .info-block__column {
-        padding: 5% 0;
+        padding-top: 25%;
         align-items: flex-start;
 
         img {
-            bottom: -2%;
+            position: absolute;
+            width: 50%;
             left: 0;
-            transform: scale(1.1);
+            bottom: -5%;
         }
     }
 
@@ -47,14 +58,21 @@
 }
 
 @media (max-width: 1000px) {
-    .header .info-block__column {
-        padding: 0;
+    .main .info-block__column {
+        padding-top: 38%;
     }
 }
 
 @media (max-width: 768px) {
-    .header .info-block__column img {
+    .main {
+        height: auto;
+        overflow-y: visible;
+    .info-block__column {
+        padding-top: 0;
+        img {
+            padding-top: 200px;
         position: static;
         transform: scale(1.0);
     }
 }
+}}

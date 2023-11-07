@@ -13,15 +13,50 @@ section {
     position: relative;
     display: flex;
     justify-content: space-between;
-    border-radius: 160px;
     margin-bottom: 20px;
 
-    input {
+    input,
+    select {
         height: 54px;
         font-size: 16px;
         border-radius: 160px;
+        border: 2px solid $white;
         padding-left: 10px;
         width: 100%;
+    }
+}
+
+.select {
+    background-color: $dark-green;
+    color: $white;
+}
+
+.checkbox__container {
+    width: 100%;
+    position: relative;
+    height: fit-content;
+    margin: 5px 0;
+
+    label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 30px 5px;
+        text-align: center;
+    }
+
+    .checkbox {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px 0;
+        appearance: none;
+        left: 0;
+        top: 0;
+    
+        &:checked {
+            border-color: $light-green;
+        }
     }
 }
 
@@ -38,6 +73,7 @@ a {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+
     &::after {
         content: "";
         position: absolute;
@@ -141,6 +177,10 @@ a {
             width: 13%;
             height: 50%;
         }
+    }
+
+    .link:hover:after {
+        width: 0;
     }
 }
 

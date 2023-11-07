@@ -31,6 +31,7 @@ aside {
 }
 
 body {
+    position: relative;
     background-color: $white;
     font-family: 'Noto Sans';
     font-size: 18px;
@@ -74,7 +75,9 @@ ul li {
 }
 
 img {
+    pointer-events: none;
     vertical-align: top;
+    user-select: none;
 }
 
 h1,

@@ -61,13 +61,13 @@
 @media (max-width: 1000px) {
     .text_title {
         font-size: 32px;
+        padding: 0;
     }
 }
 
 @media (max-width: 768px) {
     .text_title {
         font-size: 26px;
-        padding: 0;
 
         &-medium {
             font-size: 20px;

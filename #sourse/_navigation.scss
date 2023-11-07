@@ -22,6 +22,11 @@
             background-color: transparent;
             padding: 10px 0;
             max-height: unset;
+            border-radius: 0;
+
+            &::after {
+                background-color: transparent;
+            }
         }
     }
 }

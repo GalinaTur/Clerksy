@@ -6,11 +6,18 @@
 @import 'navigation.scss';
 @import 'footer';
 
-.header {
-    overflow: auto;
+.main {
+    height: fit-content;
+    background-color: $dark-green;
+    color: $white;
 
-    .label {
+    .container {
+        width: 80vw;
+    }
+
+    .question {
         font-size: 22px;
+        text-align: left;
     }
 
     .info-block__row {
@@ -19,8 +26,9 @@
     }
 
     .info-block__column {
-        padding: 13% 0;
+        padding-top: 23%;
         align-items: flex-start;
+        gap: 35px;
 
         img {
             bottom: -2%;
@@ -46,14 +54,27 @@
 }
 
 @media (max-width: 1000px) {
-    .header .info-block__column {
-        padding: 0;
+    .main {
+        .conainer {
+            width: 70vw;
+        }
+    .info-block__column {
+        padding-top: 40%;
+        align-items: center;
+        text-align: center;
     }
+}
 }
 
 @media (max-width: 768px) {
-    .header .info-block__column img {
-        position: static;
-        transform: scale(1.0);
+    .main {
+
+        .info-block__column {
+            align-items: center;
+        }
+
+        .info-block__row {
+            align-items: center;
+        }
     }
 }

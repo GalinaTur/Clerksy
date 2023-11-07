@@ -3,16 +3,24 @@
         width: 100%;
     }
 
+    .info-block__row_top {
+        background-color: $dark-green;
+    }
+
     .partners {
         padding-top: 113px;
 
-        .info-block__row img {
-            width: 12%;
+        .info-block {
+            &__row {
+                img {
+                width: 12%;
+            }
         }
 
-        .info-block__column {
-            width: 100%;
-            gap: 55px;
+            &__column {
+                width: 100%;
+                gap: 55px;
+            }
         }
     }
 }
