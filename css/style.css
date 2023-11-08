@@ -75,12 +75,7 @@ ul li {
 }
 
 img {
-  pointer-events: none;
   vertical-align: top;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 h1,
@@ -513,7 +508,8 @@ a {
   }
 }
 .intro {
-  height: 100vh;
+  padding: 0;
+  height: 100svh;
   background-color: #163A24;
   overflow-y: hidden;
 }
@@ -524,12 +520,12 @@ a {
   gap: 0;
 }
 .intro .info-block__column {
-  padding-top: 15%;
+  padding-top: 26%;
 }
 .intro .info-block__column img {
   position: absolute;
   width: 50%;
-  bottom: -25%;
+  bottom: 0;
   right: 2%;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -546,7 +542,7 @@ a {
     width: 76vw;
   }
   .intro .info-block__column {
-    padding-top: 25%;
+    padding-top: 30%;
   }
   .intro .text_title {
     font-size: 38px;
@@ -557,7 +553,7 @@ a {
     font-size: 40px;
   }
   .intro .info-block__column {
-    padding-top: 25%;
+    padding-top: 50%;
     text-align: center;
   }
   .intro .column__text {
@@ -577,7 +573,7 @@ a {
   .intro .info-block__column img {
     width: min(70%, 280px);
     right: 15%;
-    bottom: -15%;
+    bottom: 0;
   }
   .intro .column__text {
     width: 100%;
@@ -612,6 +608,9 @@ a {
 }
 .employes .info-block__column {
   width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 @media (max-width: 768px) {

@@ -75,12 +75,7 @@ ul li {
 }
 
 img {
-  pointer-events: none;
   vertical-align: top;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 h1,
@@ -627,6 +622,10 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 250px;
+  }
+  .main .info-block__column:last-child {
+    padding-top: 0;
   }
   .main .info-block__row {
     -webkit-box-align: center;

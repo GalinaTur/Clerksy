@@ -58,12 +58,13 @@
         .conainer {
             width: 70vw;
         }
-    .info-block__column {
-        padding-top: 40%;
-        align-items: center;
-        text-align: center;
+
+        .info-block__column {
+            padding-top: 40%;
+            align-items: center;
+            text-align: center;
+        }
     }
-}
 }
 
 @media (max-width: 768px) {
@@ -71,6 +72,12 @@
 
         .info-block__column {
             align-items: center;
+            padding-top: 250px;
+
+
+            &:last-child {
+                padding-top: 0;
+            }
         }
 
         .info-block__row {

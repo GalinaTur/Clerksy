@@ -75,12 +75,7 @@ ul li {
 }
 
 img {
-  pointer-events: none;
   vertical-align: top;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 h1,
